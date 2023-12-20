@@ -669,12 +669,3 @@ function PAINTER:_SetPictureSpeed(pic_name, mach)
     )
 end
 
-test_painter = PAINTER:New("Picture Painter 2", coalition.side.Blue)
-test_painter.Debug = true
-test_painter:AddDefendedAsset("McCarran International", UTILS.NMToMeters(10))
---test_painter:AddDefendedAsset("Lincoln County", UTILS.NMToMeters(10))
-
-test_painter:AddMenu()
-test_painter:SetThreatAxis(330, 120)
-test_painter:SetTemplatePrefixes({"FTR", "ATK", "BMBR", "AWACS", "COMM"})
-test_painter:AddThreatOriginZoneByName("71N")
